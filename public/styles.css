@@ -1,7 +1,28 @@
+:root {
+  --color-success: #9600cc;
+  --color-danger: #EF233C;
+  --color-warning: #F7934C;
+  --color-info: #F2F2F2;
+  --color-background: #38004d;
+  --padding-md: 16px;
+  --padding-sm: 8px;
+  --padding-lg: 28px;
+}
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: rgb(241, 241, 241);
+  background-color: var(--color-background);
+}
+
+.background-text {
+  color: var(--color-info);
 }
 
 .button {
@@ -15,47 +36,47 @@ body {
 }
 
 .button-submit {
-  color: #009933;
-  border: 2px solid #009933;
+  border: 2px solid var(--color-success);
+  background-color: var(--color-success);
+  color: white;
 }
 
 .button-submit:hover {
-  color: white;
-  background-color: #009933;
+  filter: brightness(0.9);
 }
 
 .button-delete {
-  color: #e60000;
-  border: 2px solid #e60000;
+  border: 2px solid var(--color-danger);
+  background-color: var(--color-danger);
+  color: white;
 }
 
 .button-delete:hover {
-  color: white;
-  background-color: #e60000;
+  filter: brightness(0.9);
 }
 
 .edit {
-  color: #000000;
   text-decoration: none;
-  border: 2px solid #000000;
+  border: 2px solid var(--color-warning);
   font-size: 13px;
+  color: white;
+  background-color: var(--color-warning);
 }
 
 .edit:hover {
-  color: white;
-  background-color: #000000;
+  filter: brightness(0.9);
 }
 
 .cancel {
-  color: #e60000;
+  color: white;
   text-decoration: none;
-  border: 2px solid #e60000;
+  border: 2px solid var(--color-danger);
   font-size: 13px;
+  background-color: var(--color-danger);
 }
 
 .cancel:hover {
-  color: white;
-  background-color: #e60000;
+  filter: brightness(0.8);
 }
 
 .container {
@@ -69,21 +90,28 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  margin-bottom: var(--padding-lg);
 }
 
-.post {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.card {
   width: 500px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid #949494;
   border-radius: 5px;
-  padding: 10px;
+  padding: var(--padding-md);
 }
 
 .post-title {
   margin-block-start: 0;
+}
+
+.header {
+  background-color: black;
+}
+
+.title {
+  font-size: 32px;
+  margin-block: 10px;
 }
 
 .actions {
@@ -93,21 +121,20 @@ body {
   width: 100%;
 }
 
-.new-post-form {
-  width: 500px;
-}
-
 .form-input {
   font-family: Arial, sans-serif;
   width: 100%;
   margin-bottom: 20px;
   border-radius: 5px;
-  border: 1px solid #949494;
+  /* border: 1px solid #949494; */
+  font-size: 14px;
+  padding: var(--padding-sm);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
 }
 
-.font-input {
-  height: 30px;
-  font-size: 18px;
+.section {
+  margin-bottom: var(--padding-lg);
 }
 
 ::placeholder {
