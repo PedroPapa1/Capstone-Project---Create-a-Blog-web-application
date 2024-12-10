@@ -7,28 +7,27 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <div class="header">
+      <nav class="container">
+        <h1 class="background-text title">X</h1>
+      </nav>
+    </div>
     <div class="container">
-      <h1 style="color: #333">X</h1>
-      <section>
-        <h2 style="margin-top: 30px">Edit Post</h2>
+      <section class="section">
+        <h2 style="margin-top: 30px" class="background-text">Edit Post</h2>
         <div class="main-container">
-          <form action="/edit-post/<%= post.id %>" method="POST" class="new-post-form">
-            <input
-              type="text"
-              name="title"
-              class="form-input font-input"
-              style="font-weight: 600"
-              value="<%= post.title %>"
-              required
-            />
-            <textarea name="content" class="form-input" style="height: 100px; resize: none" required>
+          <div class="card">
+            <form action="/edit-post/<%= post.id %>" method="POST" class="new-post-form">
+              <input type="text" name="title" class="form-input" value="<%= post.title %>" required />
+              <textarea name="content" class="form-input" style="height: 100px; resize: none" required>
 <%= post.content %></textarea
-            >
-            <div class="actions">
-              <button type="submit" class="button-submit button">SUBMIT</button>
-              <a class="cancel button" href="/">CANCEL</a>
-            </div>
-          </form>
+              >
+              <div class="actions">
+                <button type="submit" class="button-submit button">SUBMIT</button>
+                <a class="cancel button" href="/">CANCEL</a>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </div>

@@ -1,8 +1,8 @@
 :root {
   --color-success: #9600cc;
-  --color-danger: #EF233C;
-  --color-warning: #F7934C;
-  --color-info: #F2F2F2;
+  --color-danger: #ef233c;
+  --color-warning: #f7934c;
+  --color-info: #f2f2f2;
   --color-background: #38004d;
   --padding-md: 16px;
   --padding-sm: 8px;
@@ -11,7 +11,7 @@
 
 * {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
 }
 
