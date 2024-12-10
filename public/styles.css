@@ -1,0 +1,143 @@
+:root {
+  --color-success: #9600cc;
+  --color-danger: #ef233c;
+  --color-warning: #f7934c;
+  --color-info: #f2f2f2;
+  --color-background: #38004d;
+  --padding-md: 16px;
+  --padding-sm: 8px;
+  --padding-lg: 28px;
+}
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--color-background);
+}
+
+.background-text {
+  color: var(--color-info);
+}
+
+.button {
+  justify-items: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.button-submit {
+  border: 2px solid var(--color-success);
+  background-color: var(--color-success);
+  color: white;
+}
+
+.button-submit:hover {
+  filter: brightness(0.9);
+}
+
+.button-delete {
+  border: 2px solid var(--color-danger);
+  background-color: var(--color-danger);
+  color: white;
+}
+
+.button-delete:hover {
+  filter: brightness(0.9);
+}
+
+.edit {
+  text-decoration: none;
+  border: 2px solid var(--color-warning);
+  font-size: 13px;
+  color: white;
+  background-color: var(--color-warning);
+}
+
+.edit:hover {
+  filter: brightness(0.9);
+}
+
+.cancel {
+  color: white;
+  text-decoration: none;
+  border: 2px solid var(--color-danger);
+  font-size: 13px;
+  background-color: var(--color-danger);
+}
+
+.cancel:hover {
+  filter: brightness(0.8);
+}
+
+.container {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: var(--padding-lg);
+}
+
+.card {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #949494;
+  border-radius: 5px;
+  padding: var(--padding-md);
+}
+
+.post-title {
+  margin-block-start: 0;
+}
+
+.header {
+  background-color: black;
+}
+
+.title {
+  font-size: 32px;
+  margin-block: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-input {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  /* border: 1px solid #949494; */
+  font-size: 14px;
+  padding: var(--padding-sm);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.section {
+  margin-bottom: var(--padding-lg);
+}
+
+::placeholder {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
