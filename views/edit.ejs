@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="container">
+        <h1 class="background-text title">X</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="section">
+        <h2 class="background-text section-title">Edit Post</h2>
+        <div class="main-container">
+          <div class="card">
+            <form action="/edit-post/<%= post.id %>" method="POST" class="new-post-form">
+              <input type="text" name="title" class="form-input" value="<%= post.title %>" required />
+              <textarea name="content" class="form-input form-input-textarea" required><%= post.content %></textarea>
+              <div class="actions">
+                <button type="submit" class="button-submit button">SUBMIT</button>
+                <a class="button-cancel button" href="/">CANCEL</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
